@@ -24,7 +24,6 @@ pinMode(en4, OUTPUT);
 klesh.attach(6);         //подключаем серво к 6 порту ардуино
 klesh.write(0);          //поворачиваем серво в положение 0 градусов
 Serial.begin(9600);
-  
 }
 
 void loop()
@@ -43,7 +42,6 @@ void loop()
     digitalWrite(en4, LOW);
   }
   
- 
   	if (com=='2'){                         //НАЗАД
     digitalWrite(en1, LOW);
     digitalWrite(en2, HIGH);
@@ -77,8 +75,6 @@ void loop()
     digitalWrite(en3, LOW);
     digitalWrite(en4, LOW);
   }
-  
-  
   
       if (com=='5'){                         //ЗАХВАТ
   klesh.write(90);  
